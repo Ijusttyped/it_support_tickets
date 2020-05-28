@@ -1,0 +1,31 @@
+digraph Init_Tree {
+	node [height=.1]
+	"{'label'= 'Analyze', 'time'= 546.12, 'freq'= 1.0}"
+	"{'label'= 'Design', 'time'= 0.0, 'freq'= 1.0}"
+	"{'label'= 'Build', 'time'= 0.0, 'freq'= 1.0}"
+	"{'label'= 'Test', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'Package', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'Accept', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'Deploy', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}"
+	"{'label'= 'Analyze', 'time'= 546.12, 'freq'= 1.0}" -> "{'label'= 'Design', 'time'= 0.0, 'freq'= 1.0}" [label=1]
+	"{'label'= 'Analyze', 'time'= 546.12, 'freq'= 1.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Design', 'time'= 0.0, 'freq'= 1.0}" -> "{'label'= 'Build', 'time'= 0.0, 'freq'= 1.0}" [label=1]
+	"{'label'= 'Design', 'time'= 0.0, 'freq'= 1.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Build', 'time'= 0.0, 'freq'= 1.0}" -> "{'label'= 'Test', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Build', 'time'= 0.0, 'freq'= 1.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Test', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'Package', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Test', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Package', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'Accept', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Package', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Accept', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'Deploy', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Accept', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	"{'label'= 'Deploy', 'time'= 0.0, 'freq'= 0.0}" -> "{'label'= 'End', 'time'= 0.0, 'freq'= 0.0}" [label=0]
+	label=Init_Tree
+}

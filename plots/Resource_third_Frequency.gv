@@ -1,0 +1,9 @@
+digraph Resource_third_Frequency {
+	0 -> ER_00061
+	ER_00061 -> ER_00225
+	ER_00225 -> ER_00225
+	ER_00225 -> ER_00225
+	ER_00225 -> ER_00061
+	ER_00061 -> 0
+	label=Resource_third_Frequency
+}

@@ -1,0 +1,9 @@
+digraph Second_Frequency {
+	Start -> Analyze
+	Analyze -> Design
+	Design -> Build
+	Build -> Accept
+	Accept -> Deploy
+	Deploy -> End
+	label=Second_Frequency
+}

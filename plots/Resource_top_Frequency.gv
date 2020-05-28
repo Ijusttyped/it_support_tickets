@@ -1,0 +1,9 @@
+digraph Resource_top_Frequency {
+	0 -> ER_00206
+	ER_00206 -> ER_00287
+	ER_00287 -> ER_00075
+	ER_00075 -> ER_00075
+	ER_00075 -> ER_00206
+	ER_00206 -> 0
+	label=Resource_top_Frequency
+}

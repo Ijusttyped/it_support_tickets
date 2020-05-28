@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='./favicon.ico') }}">
+    <title>GDSC2 Predictions</title>
+</head>
+<style>
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 48%;
+}
+.boxed {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 250px;
+    border: 1px solid #000000;
+}
+.button {
+    position: absolute;
+    margin-left: 80px;
+    margin-right: 10px;
+    top: 25%;
+}
+</style>
+<body>
+    <div id="content">
+        <img src="prinzengarde_logo.png" alt="Our logo">
+    </div>
+    <p>
+    <text>To train your model select the features and press the "GET RESULTS!" Button.<br> </text>
+    </p>
+
+    <div class="boxed">
+        <p>Choose your features:</p>
+    <div>
+      <input type="checkbox" id="work_times" name="work_times" checked>
+      <label for="work_times">Work times</label>
+    </div>
+    <div>
+      <input type="checkbox" id="process_length" name="process_length">
+      <label for="process_length">Process length</label>
+    </div>
+    <div>
+      <input type="checkbox" id="timestamp_information" name="timestamp_information">
+      <label for="timestamp_information">Timestamp information</label>
+    </div>
+    <div>
+      <input type="checkbox" id="platcomp_cluster" name="platcomp_cluster">
+      <label for="platcomp_cluster">Platform-component cluster</label>
+    </div>
+    <div>
+      <input type="checkbox" id="resource_cluster" name="resource_cluster">
+      <label for="resource_cluster">Resource cluster</label>
+    </div>
+    <div>
+      <input type="checkbox" id="resource_workload" name="resource_workload">
+      <label for="resource_workload">Resource workload</label>
+    </div>
+    <div>
+      <input type="checkbox" id="resource_measures" name="resource_measures">
+      <label for="resource_measures">Resource measures</label>
+    </div>
+    <div>
+      <input type="checkbox" id="holiday_information" name="holiday_information">
+      <label for="holiday_information">Holiday information</label>
+    </div>
+    <div>
+      <input type="checkbox" id="difficulty" name="difficulty">
+      <label for="difficulty">Difficulty</label>
+    </div>
+    <div>
+      <input type="checkbox" id="skipped_days" name="skipped_days">
+      <label for="skipped_days">Skipped days</label>
+    </div>
+    </div>
+
+        <div class="boxed">
+        <p>Choose your model:</p>
+    <div>
+      <input type="checkbox" id="linear_regression" name="linear_regression" checked>
+      <label for="linear_regression">Linear Regression</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="bayesian_ridge" name="bayesian_ridge">
+      <label for="bayesian_ridge">Bayesian Ridge</label>
+    </div>
+    <div>
+      <input type="checkbox" id="svr" name="svr">
+      <label for="svr">SVR</label>
+    </div>
+    <div>
+      <input type="checkbox" id="gradient_boosting" name="gradient_boosting">
+      <label for="gradient_boosting">Gradient Boosting Regressor</label>
+    </div>
+    <div>
+      <input type="checkbox" id="random_forest" name="random_forest">
+      <label for="random_forest">Random Forest Regressor</label>
+    </div>
+    <div>
+      <input type="checkbox" id="decision_tree" name="decision_tree">
+      <label for="decision_tree">Decision Tree Regressor</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ann" name="ann">
+      <label for="ann">ANN</label>
+    </div>
+    <div>
+      <input type="checkbox" id="cnn" name="cnn">
+      <label for="cnn">CNN</label>
+    </div>
+    <div>
+      <input type="checkbox" id="lstm" name="lstm">
+      <label for="lstm">LSTM</label>
+    </div>
+    </div>
+
+    <dif>
+    <form action="/get_results">
+        <button class="button" action="{{ 'get_results' }}" >GET RESULTS!</button>
+    </form>
+    </dif>
+</body>
+</html>

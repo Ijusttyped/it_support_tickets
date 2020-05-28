@@ -1,0 +1,5 @@
+digraph Resource_second_Frequency {
+	0 -> ER_00061
+	ER_00061 -> 0
+	label=Resource_second_Frequency
+}

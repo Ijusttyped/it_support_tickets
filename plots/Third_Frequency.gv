@@ -1,0 +1,5 @@
+digraph Third_Frequency {
+	Start -> Analyze
+	Analyze -> End
+	label=Third_Frequency
+}
